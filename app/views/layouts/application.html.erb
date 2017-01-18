@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creative Developer</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+   <%= yield :head %>
+
+   <script src="//load.sumome.com/" data-sumo-site-id="ba81bf6695e7d97497b61457c9a042597d7b5a2f1211d2b4593402cdfdbe2cf1" async="async"></script>
+
+	   <!--Start of Zopim Live Chat Script-->
+	<script type="text/javascript">
+	window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+	d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+	_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+	$.src="//v2.zopim.com/?3tMHegahzupkCUjpipG7Ohp0e5mR3Fh0";z.t=+new Date;$.
+	type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+	</script>
+	<!--End of Zopim Live Chat Script-->
+</head>
+<body>
+
+  <%= render partial: "shared/header" %>
+  <%= render partial: "shared/message" %>
+
+	<main>
+	  <div class="container">
+		<%= yield %>
+	  </div>
+	</main>
+
+  <%= render partial: "shared/footer" %>
+
+<script>
+	$(document).ready(function(){
+	  $(".dropdown-button").dropdown();
+	  $(".button-collapse").sideNav();
+	 });
+</script>
+
+</body>
+</html>
+
