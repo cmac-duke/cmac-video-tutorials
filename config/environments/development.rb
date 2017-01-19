@@ -1,4 +1,9 @@
 Rails.application.configure do
+
+config.paperclip_defaults = {
+  :storage => :s3,
+  :bucket => 'S3_BUCKET_NAME'
+}
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on

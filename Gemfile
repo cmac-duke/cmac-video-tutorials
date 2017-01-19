@@ -30,7 +30,8 @@ gem 'omniauth-github'
 
 gem 'activeadmin', github: 'activeadmin'
 
-gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'paperclip', '~> 4.3', '>= 4.3.6' 
+gem 'aws-sdk', '~> 2.3'
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 
