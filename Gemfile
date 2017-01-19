@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '4.2.1'
 
@@ -22,7 +22,6 @@ gem 'devise', '~> 3.4.1'
 
 gem 'toastr-rails'
 
-gem 'mandrill-api', '1.0.52', require: 'mandrill'
 
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
@@ -30,8 +29,8 @@ gem 'omniauth-github'
 
 gem 'activeadmin', github: 'activeadmin'
 
-gem 'paperclip', '~> 4.3', '>= 4.3.6' 
-gem 'aws-sdk', '~> 2.3'
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'aws-sdk', '< 2.0'
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 
