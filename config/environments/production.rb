@@ -6,6 +6,7 @@ config.paperclip_defaults = {
     bucket: 'cmactutorial-dev',
     access_key_id: 'AKIAITRJ4T7EZVKKBRTQ',
     secret_access_key: 'HV3bNxgJA+uyITx68WmxmclWLbBQKCrFI4cSo8D'
+    s3_region: 'us-east-1',
   }
 }
   # Settings specified here will take precedence over those in config/application.rb.
